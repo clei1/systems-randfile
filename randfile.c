@@ -18,9 +18,8 @@ int main(){
     printf("%d\n", rand[10-i]);
     i --;
   }
-  
 
-  fd = open("foo", O_CREAT | O_RDWR, 0600);
+  fd = open("foo", O_CREAT | O_APPEND, 0600);
   write(fd, rand, sizeof(rand));
   int newrand[10];
   read(fd, newrand, sizeof(newrand));
