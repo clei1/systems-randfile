@@ -5,5 +5,7 @@ run: all
 	./a.out
 
 clean:
+	rm foo
 	rm *.out
 	rm *~
+
